@@ -12,10 +12,10 @@ var database = firebase.database();
 
 $("#submit").click(function(event) {
     event.preventDefault();
-    var name = $("input#name").val();
-    var email = $("input#email").val();
-    var phone = $("input#phone").val();
-    var message = $("textarea#message").val();
+    var name = $("#name").val().trim;
+    var email = $("#email").val().trim;
+    var phone = $("#phone").val().trim;
+    var message = $("#message").val();
 
 
 
@@ -23,7 +23,7 @@ $("#submit").click(function(event) {
         name: name,
         email: email,
         phone: phone,
-        message: message,
+        message: message
 
 
     }
