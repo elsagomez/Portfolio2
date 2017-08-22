@@ -1,3 +1,4 @@
+
 var config = {
     apiKey: "AIzaSyAnF9OklELLx-GH4g9gSHPpWe66f7hucKk",
     authDomain: "portfolio-4d2a3.firebaseapp.com",
@@ -30,7 +31,8 @@ $("#submit").click(function(event) {
 
     database.ref().push(newContact);
 
-
+document.getElementById("contactForm").reset();
 
 
 });
+
